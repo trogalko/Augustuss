@@ -349,6 +349,11 @@ void building_industry_start_new_production(building *b)
     if (has_raw_materials) {
         for (int i = 0; i < num_raw_materials; i++) {
             b->resources[chain[i].raw_material] -= chain[i].raw_amount;
+            //added by me
+            if (b->resources[chain[i].raw_material] <= 0) {
+                b->resources[chain[i].raw_material] = chain[i].raw_amount;
+            };
+            //end of added
         }
     }
     b->data.industry.has_raw_materials = has_raw_materials;
