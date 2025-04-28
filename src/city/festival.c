@@ -170,16 +170,16 @@ static void festival_sentiment_and_deity(int size, int god_id)
     if (city_data.festival.first_festival_effect_months <= 0) {
         city_data.festival.first_festival_effect_months = 12;
         switch (size) {
-            case FESTIVAL_SMALL: city_data.sentiment.blessing_festival_boost += 6; break;
-            case FESTIVAL_LARGE: city_data.sentiment.blessing_festival_boost += 9; break;
+            case FESTIVAL_SMALL: city_data.sentiment.blessing_festival_boost += 18; break;
+            case FESTIVAL_LARGE: city_data.sentiment.blessing_festival_boost += 18; break;
             case FESTIVAL_GRAND: city_data.sentiment.blessing_festival_boost += 18; break;
         }
     } else if (city_data.festival.second_festival_effect_months <= 0) {
         city_data.festival.second_festival_effect_months = 12;
         switch (size) {
-            case FESTIVAL_SMALL: city_data.sentiment.blessing_festival_boost += 2; break;
-            case FESTIVAL_LARGE: city_data.sentiment.blessing_festival_boost += 3; break;
-            case FESTIVAL_GRAND: city_data.sentiment.blessing_festival_boost += 9; break;
+            case FESTIVAL_SMALL: city_data.sentiment.blessing_festival_boost += 18; break;
+            case FESTIVAL_LARGE: city_data.sentiment.blessing_festival_boost += 18; break;
+            case FESTIVAL_GRAND: city_data.sentiment.blessing_festival_boost += 18; break;
         }
     }
     city_data.festival.months_since_festival = 1;

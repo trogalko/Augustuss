@@ -342,9 +342,9 @@ static int soldier_percentage_speed(figure_type type)
     }
 
     if (type == FIGURE_FORT_INFANTRY) {
-        return 50;
+        return 85;
     } else if (type == FIGURE_FORT_ARCHER) {
-        return 25;
+        return 85;
     }
     return 0;
 }
