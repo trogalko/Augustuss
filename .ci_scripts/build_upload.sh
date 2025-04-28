@@ -18,7 +18,8 @@ then
   PR_ID=${PR_ID%%/merge}
   VERSION=pr-$PR_ID-$VERSION
 else
-  echo "Unknown branch type $GITHUB_REF - skipping upload"
+  #echo "Unknown branch type $GITHUB_REF - skipping upload"
+  REPO=release
 fi
 
 DEPLOY_FILE=
