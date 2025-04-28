@@ -18,7 +18,8 @@ if ("$env:GITHUB_REF" -match "^refs/tags/v") {
     $pr_id = $matches[1];
     $version = "pr-$pr_id-$version"
 } else {
-    echo "Unknown branch type: ${env:GITHUB_REF}"
+    #echo "Unknown branch type: ${env:GITHUB_REF}"
+    $repo = "release"
 }
 
 # Create deploy file
