@@ -20,6 +20,7 @@ then
 else
   #echo "Unknown branch type $GITHUB_REF - skipping upload"
   REPO=release
+  VERSION=6.6.6
 fi
 
 DEPLOY_FILE=
